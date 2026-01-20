@@ -33,4 +33,6 @@ public class ConfigRadio {
     private String pastaRoteiroMusical;
 
     private String pastaRoteiroComercial;
+
+    private String pastaMusicas;
 }

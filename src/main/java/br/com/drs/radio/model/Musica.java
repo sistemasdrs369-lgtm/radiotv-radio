@@ -55,4 +55,11 @@ public class Musica {
     private Boolean nacional;
 
     private Boolean ativo;
+
+    public long getDuracaoEmSegundos() {
+        if (tempoMusica == null) return 0;
+        return (tempoMusica.getHour() * 3600L) +
+                (tempoMusica.getMinute() * 60L) +
+                (tempoMusica.getSecond());
+    }
 }

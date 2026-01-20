@@ -16,4 +16,6 @@ public interface MusicaRepository extends JpaRepository<Musica, Long> {
     Optional<Musica> findByAnoLancamento(int anoLancamento);
 
     Optional<Musica> findById(Long id);
+
+    List<Musica> findByAtivoTrue();
 }

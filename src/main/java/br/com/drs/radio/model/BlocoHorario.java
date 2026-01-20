@@ -1,7 +1,10 @@
 package br.com.drs.radio.model;
 
-import jakarta.persistence.*;
-import lombok.*;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,24 +13,11 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-@Entity
-@Table(name = "blocoHorario_db")
 public class BlocoHorario {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    public String horario;
-
-    public String programa;
-
-    public List<Integer> musicas = new ArrayList<>();
-
-    public List<Integer> comerciais = new ArrayList<>();
-
-    public int duracaoAlvo;
+    private String horario;
+    private String programa;
+    private List<Integer> musicas;
+    private int duracaoAlvo;
 
     public BlocoHorario(String horario, String programa, int duracaoAlvo) {
         this.horario = horario;
