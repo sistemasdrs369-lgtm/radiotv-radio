@@ -7,6 +7,6 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface ProgramaMapper {
 
-    Programa toPrograma(ProgramaDTO programaDTO);
+    Programa toEntity(ProgramaDTO programaDTO);
     ProgramaDTO toDTO(Programa programa);
 }
