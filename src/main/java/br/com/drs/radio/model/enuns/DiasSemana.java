@@ -7,11 +7,13 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum DiasSemana {
 
-    Domingo,
-    Segunda,
-    Terca,
-    Quarta,
-    Quinta,
-    Sexta,
-    Sabado;
+    DOMINGO("Domingo"),
+    SEGUNDA("Segunda"),
+    TERCA("Terça"),
+    QUARTA("Quarta"),
+    QUINTA("Quinta"),
+    SEXTA("Sexta"),
+    SABADO("Sábado");
+
+    private String descricao;
 }

@@ -5,12 +5,12 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum TipoPrograma {
+public enum Especiais {
 
-    MUSICAL("Musical"),
-    JORNALISMO("Jornalismo"),
-    MISTO("Misto"),
-    OUTROS("Outros");
+    NACIONAL("Nacional"),
+    SERTANEJO("Sertanejo"),
+    MADRUGADA("Madrugada"),
+    ROCK("Rock");
 
     private String descricao;
 }
