@@ -1,7 +1,7 @@
 package br.com.drs.radio.dto;
 
 import br.com.drs.radio.model.Artista;
-import br.com.drs.radio.model.Programas;
+import br.com.drs.radio.model.Programa;
 import br.com.drs.radio.model.enuns.Estilo;
 import br.com.drs.radio.model.enuns.Periodo;
 import br.com.drs.radio.model.enuns.Repeticao;
@@ -37,7 +37,7 @@ public class MusicaDTO {
 
     private List<Periodo> periodos;
 
-    private List<Programas>  programas;
+    private List<Programa>  programas;
 
     private Repeticao repeticao;
 

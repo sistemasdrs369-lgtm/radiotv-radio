@@ -44,7 +44,7 @@ public class Musica {
     private List<Periodo> periodos;
 
     @OneToMany
-    private List<Programas> programas;
+    private List<Programa> programas;
 
     private Repeticao repeticao;
 
