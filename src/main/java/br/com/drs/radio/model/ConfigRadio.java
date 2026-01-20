@@ -29,4 +29,8 @@ public class ConfigRadio {
     public Integer intervaloMusical;
 
     public Integer duracaoMusical;
+
+    private String pastaRoteiroMusical;
+
+    private String pastaRoteiroComercial;
 }

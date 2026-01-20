@@ -15,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "programas_db")
+@Table(name = "programa_db")
 public class Programa {
 
     @Id
@@ -34,6 +34,8 @@ public class Programa {
     private List<DiasSemana> diasSemana;
 
     private Boolean feriado;
+
+    private Boolean temBreaks;
 
     private Boolean breakProprio;
 

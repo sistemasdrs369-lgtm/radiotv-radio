@@ -3,6 +3,7 @@ package br.com.drs.radio.dto;
 import br.com.drs.radio.model.enuns.DiasSemana;
 import br.com.drs.radio.model.enuns.Especiais;
 import br.com.drs.radio.model.enuns.TipoPrograma;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,8 @@ public class ProgramaDTO {
 
     private Boolean feriado;
 
+    private Boolean temBreaks;
+
     private Boolean breakProprio;
 
     private TipoPrograma tipoPrograma;
@@ -35,3 +38,4 @@ public class ProgramaDTO {
 
     private Boolean ativo;
 }
+
