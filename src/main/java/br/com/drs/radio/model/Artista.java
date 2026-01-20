@@ -21,8 +21,6 @@ public class Artista {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Classificacao classificacao;
-
     private String nome;
 
     private List<String> formacao;

@@ -15,8 +15,6 @@ import java.util.List;
 @NoArgsConstructor
 public class ArtistaDTO {
 
-    private Classificacao classificacao;
-
     private String nome;
 
     private List<String> formacao;
