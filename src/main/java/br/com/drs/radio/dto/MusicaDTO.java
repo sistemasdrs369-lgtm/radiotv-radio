@@ -1,12 +1,11 @@
 package br.com.drs.radio.dto;
 
 import br.com.drs.radio.model.Artista;
+import br.com.drs.radio.model.Programas;
 import br.com.drs.radio.model.enuns.Estilo;
 import br.com.drs.radio.model.enuns.Periodo;
-import br.com.drs.radio.model.enuns.Programas;
 import br.com.drs.radio.model.enuns.Repeticao;
 import jakarta.persistence.Column;
-import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

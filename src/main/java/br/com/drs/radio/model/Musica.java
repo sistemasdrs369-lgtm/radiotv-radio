@@ -2,7 +2,6 @@ package br.com.drs.radio.model;
 
 import br.com.drs.radio.model.enuns.Estilo;
 import br.com.drs.radio.model.enuns.Periodo;
-import br.com.drs.radio.model.enuns.Programas;
 import br.com.drs.radio.model.enuns.Repeticao;
 import jakarta.persistence.*;
 import lombok.*;
@@ -44,7 +43,8 @@ public class Musica {
 
     private List<Periodo> periodos;
 
-    private List<Programas>  programas;
+    @OneToMany
+    private List<Programas> programas;
 
     private Repeticao repeticao;
 
