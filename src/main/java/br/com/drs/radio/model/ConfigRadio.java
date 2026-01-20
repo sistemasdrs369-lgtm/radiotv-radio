@@ -22,11 +22,11 @@ public class ConfigRadio {
 
     public String placaSomReserva;
 
-    public int intervalosComercial;
+    public Integer intervalosComercial;
 
-    public int duracaoBreakComercial;
+    public Integer duracaoBreakComercial;
 
-    public int intervaloMusical;
+    public Integer intervaloMusical;
 
-    public int duracaoMusical;
+    public Integer duracaoMusical;
 }

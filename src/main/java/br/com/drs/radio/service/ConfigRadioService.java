@@ -17,6 +17,22 @@ public class ConfigRadioService {
     private final ConfigRadioRepository configRadioRepository;
 
     public ConfigRadio salvarConfiguracao(@RequestBody ConfigRadio configRadio) {
+        // Verifica se os campos essenciais foram enviados
+        if (configRadio.getIntervalosComercial() != null && configRadio.getDuracaoBreakComercial() != null) {
+
+            int intervalo = configRadio.getIntervalosComercial();
+            int duracao = configRadio.getDuracaoBreakComercial();
+
+            // Evita divisão por zero se o intervalo for 0
+            if (intervalo > 0) {
+                int quatidadeBreaksHora = 60 / intervalo;
+                int tempoBreakshora = quatidadeBreaksHora * duracao;
+                int tempoDuracaoMusical = (60 - tempoBreakshora) / quatidadeBreaksHora;
+
+                configRadio.setDuracaoMusical(tempoDuracaoMusical);
+                configRadio.setIntervaloMusical(intervalo);
+            }
+        }
         return configRadioRepository.save(configRadio);
     }
 
