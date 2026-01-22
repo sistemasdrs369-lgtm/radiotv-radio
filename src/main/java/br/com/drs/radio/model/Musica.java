@@ -22,7 +22,8 @@ public class Musica {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
+    @ManyToOne
+    @JoinColumn(name = "artista_id")
     private Artista artista;
 
     private String nome;
